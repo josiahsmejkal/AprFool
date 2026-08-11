@@ -12,23 +12,27 @@ export default function Page() {
 
   const getNoButtonText = () => {
     const phrases = [
-      "No",
-      "Are you sure?",
-      "What if I asked really nicely?",
-      "Pretty please",
-      "With a chocolate rice cake on top",
-      "What about a matcha frostie",
-      "PLEASE POOKIE",
-      "But :*(",
-      "I am going to die",
-      "Yep im dead",
-      "ok ur talking to nathan's ghost",
-      "please babe",
-      ":((((",
-      "PRETTY PLEASE",
-      "Estoy muerto",
-      "No :(",
-    ];
+  "No 🙈",
+  "Oops! Try again 😜",
+  "Are you really sure? 🤨",
+  "I don't believe you 😂",
+  "Your finger slipped 😏",
+  "Click 'Yes' instead 😆",
+  "Come on, don't be shy 🥰",
+  "I'm waiting... 👀",
+  "You know you want to 😁",
+  "Almost there ❤️",
+  "Just one click away 💖",
+  "Pleaseeee 🥺",
+  "Don't make me cry 😭",
+  "I'll buy you chocolate 🍫",
+  "I'll bring flowers 🌹",
+  "You're too adorable 💕",
+  "Still saying no? 😭",
+  "Okay... last chance 😅",
+  "I love you anyway ❤️",
+  "Fine... but I'm clicking Yes in my heart 💘"
+];
 
     return phrases[Math.min(noCount, phrases.length - 1)];
   };
@@ -38,7 +42,7 @@ export default function Page() {
       {yesPressed ? (
         <>
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-          <div className="my-4 text-4xl font-bold">WOOOOOO!!! I like you kanii!! S3 ;)</div>
+          <div className="my-4 text-4xl font-bold">WOOOOOO!!! I like you (X) ;)</div>
         </>
       ) : (
         <>
@@ -46,7 +50,9 @@ export default function Page() {
             className="h-[200px]"
             src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
           />
-          <h1 className="my-4 text-4xl">Will you be my bestestest friend?</h1>
+          <h1 className="my-4 text-4xl">
+  Will you be my girlfriend? 💖
+</h1>
           <div className="flex items-center">
             <button
               className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
